@@ -1,7 +1,7 @@
 +++
-title = "How to Boil Eggs"
-description = "Learn how to quickly and easily boil 6 eggs!"
-date = 2024-03-03
+title = "Voici mon premier article"
+description = "Premier Article!"
+date = 2024-08-09
 
 [author]
 name = "La Chignol"
@@ -13,10 +13,10 @@ info = "test info"
 +++
 
 
-# How to boil eggs
+# Voici mon premier article
 
-Ingredients: 6 eggs
+Pas grand chose a dire 
 
-Step 1: Boil 4 cups of water.
-Step 2: Add the eggs to the water and boil for 10 minutes.
-Step 3: Rinse eggs under cold water.
+Step 1: coder.
+Step 2: coder.
+Step 3: et encore coder.
