@@ -1,6 +1,6 @@
-# Go's io.Reader
+# Le code du blog
 
-The `io.Reader` is defined as:
+Voici le fichier `main.go` :
 
 ```go
 package main
