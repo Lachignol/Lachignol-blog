@@ -48,7 +48,7 @@ type Author struct {
 	Email string `toml:"email"`
 }
 type Footer struct {
-	Info string `toml:"info"`
+	Copyright string `toml:"copyright"`
 }
 
 func (fr FileReader) Read(slug string) (string, error) {

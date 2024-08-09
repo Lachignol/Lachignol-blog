@@ -1,3 +1,18 @@
++++
+title = "Le code du blog"
+description = "Main.go"
+date = 2024-08-09
+
+[author]
+name = "La Chignol"
+email = "Pas d'email for you "
+
+[footer]
+copyright = "©LaChihnol"
+
++++
+
+
 # Le code du blog
 
 Voici le fichier `main.go` :
