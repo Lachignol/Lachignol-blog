@@ -8,7 +8,7 @@ name = "La Chignol"
 email = "Pas d'email for you "
 
 [footer]
-info = "test info"
+copyright = "©LaChignole"
 
 +++
 
