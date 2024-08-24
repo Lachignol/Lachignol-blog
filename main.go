@@ -73,7 +73,7 @@ func PostHandler(sl SlugReader, tpl *template.Template) http.HandlerFunc {
 		if err != nil {
 			http.Error(w, "Post non trouvé", http.StatusNotFound)
 			return
-			
+
 		}
 		var post PostData
 		rest, err := frontmatter.Parse(strings.NewReader(postMarkdown), &post)
