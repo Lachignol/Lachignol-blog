@@ -36,7 +36,7 @@ type SlugReader interface {
 type FileReader struct{}
 
 type Post struct {
-	Title   string `toml:"title"`
+	Title   Title `toml:"title"`
 	Slug    string `toml:"slug"`
 	Content template.HTML
 	Author  Author `toml:"author"`
@@ -49,6 +49,10 @@ type Author struct {
 }
 type Footer struct {
 	Copyright string `toml:"copyright"`
+}
+
+type Title struct{
+	Title   string `toml:"title"`
 }
 
 func (fr FileReader) Read(slug string) (string, error) {
