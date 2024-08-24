@@ -35,7 +35,7 @@ type SlugReader interface {
 
 type FileReader struct{}
 
-type Post struct {
+type PostData struct {
 	Title   string `toml:"title"`
 	Slug    string `toml:"slug"`
 	Content template.HTML
@@ -69,13 +69,13 @@ func (fr FileReader) Read(slug string) (string, error) {
 func PostHandler(sl SlugReader, tpl *template.Template) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		slug := r.PathValue("slug")
-		var post Post
 		postMarkdown, err := sl.Read(slug)
 		if err != nil {
 			http.Error(w, "Post non trouvé", http.StatusNotFound)
 			return
-
+			
 		}
+		var post PostData
 		rest, err := frontmatter.Parse(strings.NewReader(postMarkdown), &post)
 		if err != nil {
 			http.Error(w, "Error parsing frontmatter", http.StatusInternalServerError)

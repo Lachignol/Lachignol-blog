@@ -13,7 +13,6 @@ copyright = "©LaChignole"
 +++
 
 
-# Le code du blog
 
 Voici le fichier `main.go` :
 
